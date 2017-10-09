@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { browserHistory, Router, Route  } from "react-router";
 
 //All the pages
-import AppConatiner from './Components/organism/App';
+import App from './Components/organism/App';
 
 // All the css files
 import './index.css';
@@ -18,7 +18,7 @@ render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <div>
-        <Route path="/" component={ AppConatiner }/>
+        <Route path="/" component={ App }/>
       </div>
     </Router>
   </Provider>,
