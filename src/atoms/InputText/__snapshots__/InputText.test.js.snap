@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inputfield with different feature 1`] = `
+<div
+  className="wrap"
+>
+  <input
+    className="input"
+    disabled={false}
+    maxLength={9999}
+    onChange={[Function]}
+    placeholder="placeholder for input text"
+    type="text"
+  />
+</div>
+`;
+
+exports[`renders without crashing 1`] = `
+<div
+  className="wrap"
+>
+  <input
+    className="input"
+    disabled={false}
+    id={undefined}
+    maxLength={9999}
+    name={undefined}
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+</div>
+`;
