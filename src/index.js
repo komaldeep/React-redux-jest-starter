@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import AppConatiner from './App';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { hashHistory } from 'react-router';
-import {Link, browserHistory, Router, Route  } from "react-router";
+import { browserHistory, Router, Route  } from "react-router";
+
+//All the pages
+import AppConatiner from './Components/organism/App';
+
+// All the css files
+import './index.css';
 
 // React redux store
 import configureStore from './Store/AppStore';

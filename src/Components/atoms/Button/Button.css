@@ -1,6 +1,7 @@
 
 .btn {
   display: inline-block;
+  color: #ffffff;
   max-width: 100%; // IE11 overflow fix*/
   padding: 0;
   border: 0;
@@ -9,10 +10,9 @@
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  user-select: none;
+  /*user-select: none;*/
   /*transition: background-color 250ms, color 250ms, border-color 250ms;*/
   background-color: black;
-  color: #ffffff;
 }
 
 .large {
