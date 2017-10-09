@@ -9,13 +9,7 @@ export default class WrapperLogin extends Component {
 
   static displayName = 'molecule/WrapperLogin';
 
-  static propTypes = {
-    // notificationKey: PropTypes.oneOf(getEnumValues(loginNotifications)),
-  };
-
-  loginButton = () => {
-
-  }
+  loginButton = () => {}
 
   render() {
     return (

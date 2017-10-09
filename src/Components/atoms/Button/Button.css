@@ -1,8 +1,7 @@
 
 .btn {
-  display: inline-block;
-  color: #ffffff;
-  max-width: 100%; // IE11 overflow fix*/
+  /*display: inline-block;*/
+  max-width: 100%;
   padding: 0;
   border: 0;
   border-style: none;
@@ -10,9 +9,12 @@
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  /*user-select: none;*/
-  /*transition: background-color 250ms, color 250ms, border-color 250ms;*/
   background-color: black;
+  color: #ffffff;
+}
+
+.btn:hover{
+  color: #ffffff;
 }
 
 .large {
@@ -32,6 +34,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 

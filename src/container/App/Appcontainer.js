@@ -6,6 +6,11 @@ import PropTypes from 'prop-types';
 
 class App extends Component {
 
+  static propTypes = {
+    size: PropTypes.string,
+    skin: PropTypes.string
+  }
+
   componentWillMount(){
     this.props.loginAttempt();
   }
