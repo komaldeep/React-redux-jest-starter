@@ -1,8 +1,5 @@
 export default function Reducers(state={
-  user:{},
-  login:false,
   loader:false,
-  Recordinglist:false,
 }, action){
   switch (action.type){
 
@@ -11,7 +8,7 @@ export default function Reducers(state={
       return {...state, loader: action.payload}
     }
 
-    default: return state;
+    default:
+      return state;
   }
-  return state;
 }

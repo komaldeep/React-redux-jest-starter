@@ -4,7 +4,7 @@ export function loginAttempt() {
   return {
     type: "LOADER",
     payload: {
-      loadingaction: true,
+      loadingAction: true,
     }
   }
 }

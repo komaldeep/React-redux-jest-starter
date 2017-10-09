@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { loginAttempt } from './Action/Index';
 import Button, {buttonSizes , buttonSkins}  from './atoms/Button/Button.js';
 import InputText from './atoms/InputText/InputText';
+import WrapperLogin from './molecules/WrapperLogin/WrapperLogin';
 import './App.css';
-
-import WrapperLogin from './molecules/WrapperLogin/WrapperLogin'
 
 class App extends Component {
 
@@ -14,12 +15,6 @@ class App extends Component {
       inputField:'',
     }
   }
-
-  // inputFieldValue=(value)=>{
-  //   this.setState({
-  //     inputField: value
-  //   })
-  // }
 
   render() {
     return (
@@ -34,4 +29,20 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(store) {
+  return { Reducers: store.Reducers};
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    loginAttempt
+  }, dispatch);
+}
+
+
+const AppConatiner = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)
+
+export default AppConatiner;
