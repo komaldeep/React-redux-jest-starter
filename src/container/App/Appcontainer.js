@@ -1,7 +1,7 @@
 import { Component, cloneElement } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { loginAttempt } from '../../Action/Index';
+import { loginAttempt } from '../../action/Index';
 import PropTypes from 'prop-types';
 
 class App extends Component {

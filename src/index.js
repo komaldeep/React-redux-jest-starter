@@ -5,13 +5,13 @@ import { Provider } from 'react-redux';
 import { browserHistory, Router, Route  } from "react-router";
 
 //All the pages
-import App from './Components/organism/App';
+import App from './components/organism/App';
 
 // All the css files
 import './index.css';
 
 // React redux store
-import configureStore from './Store/AppStore';
+import configureStore from './store/AppStore';
 const store = configureStore();
 
 render(

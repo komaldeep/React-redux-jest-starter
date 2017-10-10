@@ -1,4 +1,4 @@
-import * as Actions from '../Action/Index';
+import * as Actions from './/Index';
 
 export function loginAttempt() {
   return {
